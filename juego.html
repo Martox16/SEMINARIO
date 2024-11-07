@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape de la Red - Juego</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 id="level-title"></h1>
+        <p id="level-description"></p>
+        <div id="timer">Tiempo restante: 15:00</div>
+
+        <div id="puzzle-container">
+            <p id="puzzle-question"></p>
+            <div id="options-container"></div>
+            <p id="hint" class="hint"></p>
+        </div>
+
+        <div id="level-code-container" style="display: none;">
+            <p id="level-code"></p>
+            <!-- Botón para continuar al siguiente nivel -->
+            <button id="next-level-button" onclick="continueToNextLevel()" style="display:none;">Continuar al siguiente nivel</button>
+        </div>
+
+        <div id="code-input-container" style="display: none;">
+            <p>Ingresa el código final para ganar:</p>
+            <input type="text" id="final-code" placeholder="Ingresa el codigo">
+            <button onclick="verifyFinalCode()">Verificar</button>
+        </div>
+
+        <div id="final-message" style="display: none;"></div>
+
+        
+        <!-- Botón de reinicio del juego siempre visible -->
+        <button id="restart-button" onclick="restartGame()">Reiniciar Juego</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>

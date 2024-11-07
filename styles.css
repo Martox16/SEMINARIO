@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e3f2fd;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #1976d2;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hint {
+    color: red;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+}
+
+#restart-button {
+    background-color: #d32f2f; /* Rojo */
+    width: 50%;
+    margin: 20px auto;
+    font-size: 1.2rem;
+}
+
+#restart-button:hover {
+    background-color: #c62828; /* Rojo más oscuro */
+}
+
+#timer {
+    font-weight: bold;
+    color: #d32f2f;
+    font-size: 1.3rem;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#next-level-button {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    align-self: center; /* Asegura que se alinee al centro */
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+#level-code-container {
+    display: none;
+    text-align: center;
+}
+
+#code-input-container {
+    display: none;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1976d2;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button, input {
+        width: 100%;
+    }
+}
+
+#final-message {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4caf50; /* Color verde para el mensaje de éxito */
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f8e9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#restart-button {
+    background-color: #d32f2f;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#restart-button:hover {
+    background-color: #b71c1c;
+}
